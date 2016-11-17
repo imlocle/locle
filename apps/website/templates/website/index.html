@@ -6,15 +6,16 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="../../static/css/master.css" media="screen" title="no title">
+    <script type="text/javascript" src="../../static/js/style.js"></script>
     <title>Loc Le</title>
   </head>
   <body>
     <nav class="nav">
       <div class="container">
         <div class="nav-center">
-          <a class="nav-item is-tab">About Me</a>
-          <a class="nav-item is-tab">Portfolio</a>
-          <a class="nav-item is-tab">Contact</a>
+          <a class="nav-item" href="#port" id="portfolio-link">Portfolio</a>
+          <a class="nav-item" href="#about" id="about-link">About Me</a>
+          <a class="nav-item" href="#contacts" id="contacts-link">Contacts</a>
         </div>
       </div>
     </nav>
@@ -23,71 +24,133 @@
     <section class="module parallax parallax-1">
       <div class="container">
         <h1>Loc Le</h1>
-        <p>Full Stack Developer</p>
       </div>
     </section>
 
     <section class="module content">
       <div class="portfolio">
-            <div class="project">
+        <h1>Full Stack Developer</h1>
+            <div class="code-box">
               <div class="coding-icon">
-                <img src="../../static/images/python2.png"/>
+                <img src="../../static/images/python.png"/>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul>
+                <p>Python | Django | Flask</p>
+              </ul>
             </div>
-            <div class="project">
+            <div class="code-box">
               <div class="coding-icon">
                 <img src="../../static/images/ruby2.png"/>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul>
+                <p>Ruby | Rails</p>
+              </ul>
             </div>
-            <div class="project">
+            <div class="code-box">
               <div class="coding-icon">
-                <img src="../../static/images/javascript.png"/>
+                <img src="../../static/images/javascript1.png"/>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <ul>
+                <p>JavaScript | Node.js  Express.js | AngularJS</p>
+              </ul>
+            </div>
+            <div class="code-box">
+              <div class="coding-icon">
+                <img src="../../static/images/frontend.jpg"/>
+              </div>
+              <ul>
+                <p>HTML | CSS | jQuery | Bulma  Materialize | Bootstrap</p>
+              </ul>
+            </div>
+            <div class="code-box">
+              <div class="coding-icon">
+                <img src="../../static/images/server.jpg"/>
+              </div>
+              <p>MySQL | SQLite | MongoDB</p>
+            </div>
+            <div class="code-box">
+              <div class="coding-icon">
+                <img src="../../static/images/settings.png"/>
+              </div>
+              <p>GitHub | AWS </p>
             </div>
       </div>
   </section>
 
     <section class="module parallax parallax-2">
       <div class="container">
-        <h1>About Me</h1>
-        <p>I am a self-motivated full stack developer with a passion for creativity and learning. I am idea driven and committed to creating products that innovates and pushes culture and society forward through the use of technology.</p>
-        <!-- <p><i>"Everything negative - pressure, challenges - is all an opportunity for me to rise."</i> - Kobe Bryant</p> -->
+        <h1>My Mission</h1>
+        <div class="main-box">
+
+        <div class="box-photo">
+          <p>Technology is a way for the world to push boundaries and test the unknown.</p>
+        </div>
+        <div class="box-photo">
+          <p>To provide the highest-quality web development services in a friendly cooperative environment that nurtures creativity and leadership.</p>
+        </div>
+        <div class="box-photo">
+          <p>asdf</p>
+        </div>
+      </div>
+
+
       </div>
     </section>
-
+    <div id="port">
     <section class="module content">
       <div class="portfolio">
+
         <h1>Portfolio</h1>
             <div class="project">
+              <a href="/finder">
               <div class="coding-icon">
                 <img src="../../static/images/eat.png"/>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+              <h2>Finder</h2>
+              <p>Social dining application that allows users to adventurously search for random, “Hole-in-the-wall,” restaurants.</p>
+            </div></a>
             <div class="project">
+              <a href="/writenow">
               <div class="coding-icon">
                 <img src="../../static/images/write.png"/>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
+              <h2>Write Now</h2>
+              <p>A gamified social media site for aspiring writers to post articles, comments and likes.</p>
+            </div></a>
             <div class="project">
+              <a href="/guiltypleasures">
               <div class="coding-icon">
                 <img src="../../static/images/shopping.png"/>
               </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-      </div>
+              <h2>Guilty Pleasures</h2>
+              <p>E-Commerce site specializing in movies, music and snacks that are considered guilty pleasures.</p>
+            </div></a>
+          </div>
   </section>
+</div>
 
 
 
 
 <section class="module parallax parallax-3">
   <div class="container">
-    <h1></h1>
+    <div id="about">
+      <h1>About Me</h1>
+      <div class="main-box">
+
+      <div class="box-photo">
+
+      </div>
+      <div class="box-photo">
+        <p>I am a self-motivated full stack developer with a passion for creativity and learning.I am idea driven and committed to creating products that innovates and pushes culture and society forward through the use of technology.</p>
+
+      </div>
+      <div class="box-photo">
+
+      </div>
+    </div>
+
+    </div>
   </div>
 </section>
 <section class="module content">
@@ -100,22 +163,22 @@
       <div class="project">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         <ul>
-        <li><a class="button is-outlined" href="mailto:loc.tan.le@gmail.com">
+        <li class="link-logo"><a class="button is-outlined" href="mailto:loc.tan.le@gmail.com">
           <span class="icon">
             <i class="fa fa-envelope"></i>
           </span>
         </a></li>
-        <li><a class="button is-outlined">
+        <li class="link-logo"><a class="button is-outlined">
           <span class="icon">
             <i class="fa fa-file"></i>
           </span>
         </a></li>
-        <li><a class="button is-outlined" href="https://www.github.com/imlocle">
+        <li class="link-logo"><a class="button is-outlined" href="https://www.github.com/imlocle">
           <span class="icon">
             <i class="fa fa-github"></i>
           </span>
         </a></li>
-        <li><a class="button is-outlined" href="https://www.linkedin.com/in/imlocle">
+        <li class="link-logo"><a class="button is-outlined" href="https://www.linkedin.com/in/imlocle">
           <span class="icon">
             <i class="fa fa-linkedin"></i>
           </span>
