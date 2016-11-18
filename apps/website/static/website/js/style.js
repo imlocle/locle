@@ -1,17 +1,22 @@
-$(document).ready(function() {
-  $("#about-link").click(function(){
-    $('html, body').animate({
-      scrollTop: $("#about").offset().top
-    },200000);
-  });
-  $("#portfolio-link").click(function(){
-    $('html, body').animate({
-      scrollTop: $("#portfolio").offset().top
-    },2000);
-  });
-  $("#contacts-link").click(function(){
-    $('html, body').animate({
-      scrollTop: $("#contacts").offset().top
-    },2000);
-  });
+$(document).ready(function(){
+  var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+  var img = document.getElementById('myImg');
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
 })

@@ -2,9 +2,137 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title></title>
+    {% load static %}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
+    <title>Write Now</title>
   </head>
   <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-center">
+          <a class="nav-item" href="/">Home</a>
+          <a class="nav-item" href="/#port">Portfolio</a>
+          <a class="nav-item" href="/#about">About Me</a>
+          <a class="nav-item" href="/#contacts">Contacts</a>
+        </div>
+      </div>
+    </nav>
+    <section class="module parallax parallax-writenow">
+      <div class="container">
+        <h1>Write Now</h1>
+      </div>
+    </section>
+
+    <section class="module content">
+
+      <div class="row">
+        <div class="column">
+          <img src="{% static 'website/images/write1.png' %}" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="{% static 'website/images/write3.png' %}" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="{% static 'website/images/write2.png' %}" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="{% static 'website/images/write4.png' %}" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+      </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+                <img src="{% static 'website/images/write1.png' %}" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">2 / 4</div>
+                <img src="{% static 'website/images/write2.png' %}" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">3 / 4</div>
+                <img src="{% static 'website/images/write3.png' %}" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+              <div class="numbertext">4 / 4</div>
+                <img src="{% static 'website/images/write4.png' %}" style="width:100%">
+            </div>
+
+        </div>
+      </div>
+          <div class="project">
+            <h1>Role</h1>
+            <p>Integrated the gamified aspect. Built the back-end database and queries that underlie the front-end display.</p>
+          </div>
+          <div class="project">
+            <h1>Description</h1>
+            <p>A gamified social media site for aspiring writers to post articles, comments and likes.</p>
+            <ul>
+            <li class="link-logo"><a class="button is-outlined" href="">
+              Live!
+            </a></li>
+            <li class="link-logo"><a class="button is-outlined" href="https://github.com/nathanfonbuena/rails_project">
+              <span class="icon">
+                <i class="fa fa-github"></i>
+              </span>
+            </a></li>
+          </ul>
+          </div>
+          <div class="project">
+            <h1>Tech</h1>
+            <p>Ruby  |  Rails  |  SQLite  |  HTML  |  CSS</p>
+          </div>
+
+    </section>
+    <script>
+function openModal() {
+  document.getElementById('myModal').style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById('myModal').style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  // var dots = document.getElementsByClassName("demo");
+  // var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  // for (i = 0; i < dots.length; i++) {
+  //   dots[i].className = dots[i].className.replace(" active", "");
+  // }
+  slides[slideIndex-1].style.display = "block";
+  // dots[slideIndex-1].className += " active";
+  // captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
 
   </body>
 </html>
