@@ -137,18 +137,24 @@
       </div>
       <div class="project">
         <p>The Little Things</p>
-        <p>Being a former hip-hop dancer, I love creativity and music. I'm a big sports fantatic, especially when it comes to the Lakers. If you ever drive with me, you will hear horrible renditions of Backstreet Boys.</p>
+        <p>Being a former hip-hop dancer, I love creativity and music. I'm a big sports fan, especially for the Lakers. I love traveling. I taught English in Japan and studied abroad in Vietnam. If you ever drive with me, you will hear horrible renditions of Backstreet Boys.</p>
         <ul>
         <li class="link-logo"><a class="button is-outlined" href="mailto:loc.tan.le@gmail.com">
           <span class="icon">
             <i class="fa fa-envelope"></i>
           </span>
         </a></li>
+
+
         <li class="link-logo"><a class="button is-outlined">
-          <span class="icon">
+          <span class="icon" id="myImg">
             <i class="fa fa-file"></i>
+            
           </span>
         </a></li>
+
+
+
         <li class="link-logo"><a class="button is-outlined" href="https://www.github.com/imlocle">
           <span class="icon">
             <i class="fa fa-github"></i>
@@ -163,6 +169,28 @@
       </div>
     </div>
 </section>
+<script type="text/javascript">
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+</script>
 
   </body>
 </html>
