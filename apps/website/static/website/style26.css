@@ -73,6 +73,15 @@ section.module.parallax-guilty{
   /*border: solid black 1px;*/
 }
 
+.port-box{
+  display: inline-block;
+  margin: 10px;
+  vertical-align: top;
+  height: 400px;
+  width: 400px;
+
+}
+
 .port-info{
   display: inline-block;
   margin: 10px;
@@ -88,9 +97,22 @@ section.module.parallax-guilty{
   width: 150px;
 }
 
+.coding-icon-link{
+  margin: auto;
+  height: 150px;
+  width: 150px;
+}
+
+.coding-icon-link img:hover{
+  border: solid black 5px;
+}
+
 .coding-icon img{
   border-radius: 20%;
+}
 
+.coding-icon-link img{
+  border-radius: 20%;
 }
 
 .personal-icon img{
@@ -316,7 +338,7 @@ section.module.parallax-guilty h1 {
 }
 
 .numbertext img{
-  width: 700px;
+  width: 90%;
   height: 100%;
 }
 
@@ -411,8 +433,8 @@ img.hover-shadow {
 .modal-content {
     margin: auto;
     display: block;
-    width: 80%;
-    max-width: 700px;
+    width: 100%;
+    max-width: 950px;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
