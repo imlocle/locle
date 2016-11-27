@@ -5,7 +5,7 @@
     {% load static %}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.2.3/css/bulma.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="{% static 'website/style26.css' %}">
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
     <title>Loc Le</title>
   </head>
   <body>
@@ -13,7 +13,7 @@
       <div class="container">
         <div class="nav-center">
           <a class="nav-item" href="/">Home</a>
-          <a class="nav-item" href="#port">Portfolio</a>
+          <a class="nav-item" href="#port">Projects</a>
           <a class="nav-item" href="#about">About Me</a>
           <a class="nav-item" href="#contacts">Contacts</a>
         </div>
@@ -80,14 +80,14 @@
     <section class="module parallax parallax-2">
       <div class="container">
         <h1>My Mission</h1>
-          <p>To provide the highest-quality web development services in a friendly cooperative environment that nurtures creativity and leadership. My goal is to leverage technology, to push boundaries and test the unknown.</p>
+          <p>To provide the highest quality web development services in a friendly cooperative environment that nurtures creativity and leadership. My goal is to leverage technology, to push boundaries and test the unknown.</p>
       </div>
     </section>
     <div id="port">
     <section class="module content">
       <div class="portfolio">
 
-        <h1>Portfolio</h1>
+        <h1>Projects</h1>
             <div class="port-box">
               <a href="/finder">
               <div class="coding-icon-link">
@@ -126,7 +126,7 @@
   <div class="container">
     <div id="about">
       <h1>About Me</h1>
-        <p>I am a self-motivated full stack developer with a passion for creativity and learning. I am driven by outside-of-the-box ideas and committed to creating innovative products that serve to push culture and society forward in positive directions.</p>
+        <p>I am a self-motivated full stack developer, driven by unconventional ideas and processes to advance the end-users quality of life. Drawing from my experiences in teaching, travel, music and dance, I have a passion for creativity. Whether it’s from my experience studying abroad in Vietnam, teaching English in Japan, or choreographing a dance inspired by Michael Jackson, I’m inspired by diverse people, how technology can make lives better, and to be part of something special.</p>
     </div>
   </div>
 </section>
@@ -136,64 +136,36 @@
       <div class="project">
         <div class="personal-icon">
           <img src="{% static 'website/images/Loc1.jpg' %}"/>
+          <ul>
+          <li class="link-logo"><a class="button is-outlined" href="mailto:loc.tan.le@gmail.com">
+            <span class="icon">
+              <i class="fa fa-envelope"></i>
+            </span>
+          </a></li>
+          <li class="link-logo"><a class="button is-outlined" href='https://www.dropbox.com/s/ojuuisn1aqxibf0/Loc%20Le%20-%20Resume%202016.pdf?dl=0'>
+            <span class="icon">
+              <i class="fa fa-file"></i>
+            </span>
+          </a></li>
+          <li class="link-logo"><a class="button is-outlined" href="https://www.github.com/imlocle">
+            <span class="icon">
+              <i class="fa fa-github"></i>
+            </span>
+          </a></li>
+          <li class="link-logo"><a class="button is-outlined" href="https://www.linkedin.com/in/imlocle">
+            <span class="icon">
+              <i class="fa fa-linkedin"></i>
+            </span>
+          </a></li>
+        </ul>
         </div>
       </div>
       <div class="project">
         <p>The Little Things</p>
-        <p>Being a former hip-hop dancer, I love creativity and music. I'm a big sports fan, especially for the Lakers. I love traveling. I've taught English in Japan and studied abroad in Vietnam. If you ever drive with me, you will hear horrible renditions of Backstreet Boys.</p>
-        <ul>
-        <li class="link-logo"><a class="button is-outlined" href="mailto:loc.tan.le@gmail.com">
-          <span class="icon">
-            <i class="fa fa-envelope"></i>
-          </span>
-        </a></li>
-
-
-        <li class="link-logo"><a class="button is-outlined">
-          <span class="icon" id="myImg">
-            <i class="fa fa-file"></i>
-
-          </span>
-        </a></li>
-
-
-
-        <li class="link-logo"><a class="button is-outlined" href="https://www.github.com/imlocle">
-          <span class="icon">
-            <i class="fa fa-github"></i>
-          </span>
-        </a></li>
-        <li class="link-logo"><a class="button is-outlined" href="https://www.linkedin.com/in/imlocle">
-          <span class="icon">
-            <i class="fa fa-linkedin"></i>
-          </span>
-        </a></li>
-      </ul>
+        <p>Driving to a Lakers game, in the Batmobile, singing terrible renditions of Backstreet Boys, *NSYNC or any classic 80's songs would be the perfect day.</p>
       </div>
     </div>
 </section>
-<script type="text/javascript">
-var modal = document.getElementById('myModal');
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById('myImg');
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-</script>
 
   </body>
 </html>
